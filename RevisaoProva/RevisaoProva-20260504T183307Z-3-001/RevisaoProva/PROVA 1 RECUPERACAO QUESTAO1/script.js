@@ -1,0 +1,12 @@
+let numeroEntregas = parseInt(prompt(`Insira o número de entregas realizadas`));
+let tempoMedioEntrega = parseFloat(prompt(`Insira o tempo médio por entrega em minutos`));
+let consumoMedioEntrega = parseFloat(prompt(`Insira o consumo médio por entrega em litros`));
+let precoCombustivel = parseFloat(prompt(`Insira o tempo preço do combustível em reais`));
+let tempoTotalHoras = ((tempoMedioEntrega/60)*numeroEntregas);
+let consumoTotal=(tempoTotalHoras*consumoMedioEntrega);
+let custoTotal=(consumoTotal*precoCombustivel);
+let custoMedioEntrega=(custoTotal/(tempoMedioEntrega/60));
+alert(`O tempo total em horas é de ${tempoTotalHoras.toFixed(2)} horas`);
+alert(`O consumo total é de ${consumoTotal.toFixed(2)} litros`);
+alert(`O custo total é de ${custoTotal.toFixed(2)} RS`);
+alert(`O custo médio por entrega é de ${custoMedioEntrega.toFixed(2)} RS`);

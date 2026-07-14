@@ -1,0 +1,10 @@
+let quantTotalPaginas = parseInt(prompt(`Insira um valor para a quantidade total de páginas a serem digitadas`));
+let numeroDigitadores = parseInt(prompt(`Insira um valor para a quantidade de números de digitadores trabalhando atualmente`));
+let tempoTotalEstimado = parseFloat(prompt(`Insira um valor para o tempo total estimado para concluir o trabalho (em horas)`));
+let numeroNovosDigitadores = parseInt(prompt(`Insira um valor para a quantidade de novos digitadores que serão adicionados á equipe`));
+let quantMediaHora = quantTotalPaginas*tempoTotalEstimado;
+let novoNumeroTDigitadores = numeroDigitadores + numeroDigitadores;
+let novoTempoEstimado = (numeroDigitadores*tempoTotalEstimado)/novoNumeroTDigitadores;
+alert(`Quantidade média de páginas digitadas por hora pela equipe atual: ${quantMediaHora.toFixed(2)} páginas`);
+alert(`Novo número total de digitadores: ${novoNumeroTDigitadores.toFixed(2)} digitadores`);
+alert(`Novo tempo estimado para concluir o trabalho: ${novoTempoEstimado.toFixed(2)} horas`);
